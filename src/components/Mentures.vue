@@ -29,11 +29,11 @@ export default {
 <style lang="scss" scoped>
 .mentures {
   padding: 0.2rem;
-
+  margin: 0 5rem;
   box-shadow: 0 2px 5px gray;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
 }
 </style>
