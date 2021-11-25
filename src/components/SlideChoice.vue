@@ -7,7 +7,7 @@
         width="50"
         height="50"
       />
-      <span> {{ first.name }} </span>
+      <span> {{ choices[0].code }} </span>
     </div>
 
     <div class="all-choice">
@@ -15,7 +15,7 @@
         v-for="(choice, index) in choices"
         :key="index"
         class="choice"
-        @click="first = choice"
+        @click="makeChoice(choice)"
       >
         <img
           :src="require(`@/assets/images/${choice.image}`)"
@@ -35,10 +35,21 @@ export default {
   props: {
     choices: Array,
   },
+
   data() {
     return {
       first: this.choices[0],
     };
+  },
+  created() {
+    this.$store.dispatch(this.first.type, this.first.name);
+  },
+
+  methods: {
+    makeChoice(choice) {
+      this.first = choice;
+      this.$store.dispatch(choice.type, choice.name);
+    },
   },
 };
 </script>
