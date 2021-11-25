@@ -30,7 +30,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin: 0 2rem;
   box-shadow: 1px 1px 4px gray;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 </style>
