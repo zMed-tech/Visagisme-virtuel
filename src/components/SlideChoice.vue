@@ -68,6 +68,7 @@ export default {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    transition: all ease-in 0.3s;
   }
 
   & .all-choice {
@@ -84,8 +85,13 @@ export default {
 
     & .choice {
       margin: 0 0.5rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
+
   &:hover .all-choice {
     visibility: visible;
     width: 100%;
