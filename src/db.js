@@ -2,45 +2,52 @@ export default [
   {
     name: "Menture",
     image: "random.jpeg",
-    code: 1,
+    code: "OvaleHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
-    code: 1,
+    code: "OvaleHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
-    code: 1,
+    code: "OvaleFemme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "OvaleFemme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "RectangleFemme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "RectangleFemme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "RectangleHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "RectangleHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "OvaleHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "OvaleHomme",
   },
   {
     name: "Menture",
