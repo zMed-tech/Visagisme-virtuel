@@ -1,6 +1,6 @@
 <template>
   <div class="slide-choice">
-    <div class="choice" @click="openChoice = !openChoice">
+    <div class="choice">
       <img
         :src="require(`@/assets/images/${first.image}`)"
         alt=""
@@ -10,7 +10,7 @@
       <span> {{ first.name }} </span>
     </div>
 
-    <div v-if="openChoice" class="all-choice">
+    <div class="all-choice">
       <div
         v-for="(choice, index) in choices"
         :key="index"
@@ -38,7 +38,6 @@ export default {
   data() {
     return {
       first: this.choices[0],
-      openChoice: true,
     };
   },
 };
@@ -70,6 +69,7 @@ export default {
     transition: all ease-in 1s;
     width: 0;
     overflow: hidden;
+    margin: 0 0.2rem;
 
     & .choice {
       margin: 0 0.5rem;
