@@ -7,6 +7,11 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/commande",
+    name: "Commande",
+    component: () => import("@/views/Commande.vue"),
+  },
 ];
 
 const router = createRouter({
