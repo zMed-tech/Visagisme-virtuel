@@ -2,14 +2,14 @@
   <div class="article">
     <div class="image">
       <img
-        :src="require(`@/assets/images/${article.image}`)"
+        :src="require(`@/assets/images/${image}`)"
         alt=""
         height="100"
         width="100"
       />
     </div>
     <div class="name">
-      <h3>{{ article.name }}</h3>
+      <h3>{{ name }}</h3>
     </div>
   </div>
 </template>
@@ -18,7 +18,8 @@
 export default {
   name: "Article",
   props: {
-    article: Object,
+    name: String,
+    image: String,
   },
 };
 </script>
