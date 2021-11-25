@@ -4,8 +4,10 @@
       <h2>Logo</h2>
     </div>
     <ul class="lists">
-      <li class="list">Acceuil</li>
-      <li class="list">Commander Votre Menture</li>
+      <li class="list" @click="$router.push({ name: 'Home' })">Acceuil</li>
+      <li class="list" @click="$router.push({ name: 'Commande' })">
+        Commander Votre Menture
+      </li>
     </ul>
     <div class="contact">
       <button>Contacter-nous</button>
