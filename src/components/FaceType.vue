@@ -2,26 +2,36 @@
   <div class="face-type">
     <SlideChoice
       :choices="[
-        { name: 'ovale', image: 'random.jpeg' },
-        { name: 'rectangle', image: 'random.jpeg' },
-        { name: 'rond', image: 'random.jpeg' },
-        { name: 'triangle', image: 'random.jpeg' },
-        { name: 'trisomique', image: 'random.jpeg' },
+        {
+          name: 'Ovale',
+          image: 'random.jpeg',
+          type: 'setVisage',
+          code: 'Visage',
+        },
+        { name: 'Rectangle', image: 'random.jpeg', type: 'setVisage' },
+        { name: 'Rond', image: 'random.jpeg', type: 'setVisage' },
+        { name: 'Triangle', image: 'random.jpeg', type: 'setVisage' },
+        { name: 'Trisomique', image: 'random.jpeg', type: 'setVisage' },
       ]"
     />
 
     <SlideChoice
       :choices="[
-        { name: 'Homme', image: 'random.jpeg' },
-        { name: 'Femme', image: 'random.jpeg' },
+        {
+          name: 'Homme',
+          image: 'random.jpeg',
+          type: 'setGenre',
+          code: 'Genre',
+        },
+        { name: 'Femme', image: 'random.jpeg', type: 'setGenre' },
       ]"
     />
 
     <SlideChoice
       :choices="[
-        { name: 'Rouge', image: 'random.jpeg' },
-        { name: 'Vert', image: 'random.jpeg' },
-        { name: 'Bleu', image: 'random.jpeg' },
+        { name: 'Rouge', image: 'random.jpeg', type: 'setEyes', code: 'Yeux' },
+        { name: 'Vert', image: 'random.jpeg', type: 'setEyes' },
+        { name: 'Bleu', image: 'random.jpeg', type: 'setEyes' },
       ]"
     />
   </div>
