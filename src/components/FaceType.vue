@@ -1,22 +1,36 @@
 <template>
   <div class="face-type">
-    <div class="image">
-      <img src="../assets/images/random.jpeg" alt="" height="50" width="50" />
-    </div>
-    <div class="image">
-      <img src="../assets/images/random.jpeg" alt="" height="50" width="50" />
-    </div>
-    <div class="image">
-      <img src="../assets/images/random.jpeg" alt="" height="50" width="50" />
-    </div>
-    <div class="image">
-      <img src="../assets/images/random.jpeg" alt="" height="50" width="50" />
-    </div>
+    <SlideChoice
+      :choices="[
+        { name: 'ovale', image: 'random.jpeg' },
+        { name: 'rectangle', image: 'random.jpeg' },
+        { name: 'rond', image: 'random.jpeg' },
+        { name: 'triangle', image: 'random.jpeg' },
+        { name: 'trisomique', image: 'random.jpeg' },
+      ]"
+    />
+
+    <SlideChoice
+      :choices="[
+        { name: 'Homme', image: 'random.jpeg' },
+        { name: 'Femme', image: 'random.jpeg' },
+      ]"
+    />
+
+    <SlideChoice
+      :choices="[
+        { name: 'Rouge', image: 'random.jpeg' },
+        { name: 'Vert', image: 'random.jpeg' },
+        { name: 'Bleu', image: 'random.jpeg' },
+      ]"
+    />
   </div>
 </template>
 
 <script>
+import SlideChoice from "./SlideChoice.vue";
 export default {
+  components: { SlideChoice },
   name: "FaceType",
 };
 </script>
@@ -26,7 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   & .image {
     cursor: pointer;
