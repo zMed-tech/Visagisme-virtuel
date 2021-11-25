@@ -1,20 +1,27 @@
 <template>
   <div class="mentures">
     <Article
-      :article="{
-        name: 'Menture',
-        image: 'random.jpeg',
-      }"
+      v-for="(article, index) in articles"
+      :key="index"
+      :name="article.name"
+      :image="article.image"
     />
   </div>
 </template>
 
 <script>
+import db from "@/db.js";
 import Article from "@/components/Article";
 export default {
   name: "Mentures",
   components: {
     Article,
+  },
+
+  data() {
+    return {
+      articles: [...db],
+    };
   },
 };
 </script>
