@@ -52,9 +52,11 @@ export default [
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "RondHomme",
   },
   {
     name: "Menture",
     image: "random.jpeg",
+    code: "TriangleFemme",
   },
 ];
