@@ -1,7 +1,7 @@
 <template>
   <div class="mentures">
     <Article
-      v-for="(article, index) in articles"
+      v-for="(article, index) in filterArticles"
       :key="index"
       :name="article.name"
       :image="article.image"
@@ -12,6 +12,7 @@
 <script>
 import db from "@/db.js";
 import Article from "@/components/Article";
+import { mapGetters } from "vuex";
 export default {
   name: "Mentures",
   components: {
@@ -24,8 +25,12 @@ export default {
     };
   },
   computed: {
+    ...mapGetters(["getVisage", "getGenre"]),
+
     filterArticles() {
-      return this.articles.filter((article) => article.code == 1);
+      return this.articles.filter(
+        (article) => article.code == `${this.getVisage}${this.getGenre}`
+      );
     },
   },
 };
@@ -41,5 +46,6 @@ export default {
   align-items: center;
   grid-template-columns: auto auto auto auto auto;
   grid-row-gap: 25px;
+  transition: all ease-in 0.7s;
 }
 </style>
