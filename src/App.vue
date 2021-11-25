@@ -1,8 +1,11 @@
 <template>
   <TheNavbar />
-  <transition name="slide-view" mode="out-in">
-    <router-view :key="$route.path" />
-  </transition>
+
+  <router-view v-slot="{ Component }">
+    <transition name="slide-view" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script>
