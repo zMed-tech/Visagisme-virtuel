@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 .mentures {
   padding: 0.5rem 0;
-  margin: 0 5rem;
+  margin: 0 3rem;
   box-shadow: 0 2px 5px gray;
   display: grid;
   justify-content: center;
