@@ -86,5 +86,34 @@ export default {
       color: red;
     }
   }
+
+  & .contact {
+    & button {
+      font-weight: bold;
+      outline: none;
+      border-radius: 10px;
+      padding: 0.1rem 0.3rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all ease-in 0.5s;
+      background-color: transparent;
+      border: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 3px;
+        width: 0;
+        position: absolute;
+        top: 90%;
+        background-color: red;
+        transition: all ease-in 0.5s;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
 }
 </style>
