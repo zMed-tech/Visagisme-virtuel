@@ -1,1 +1,12 @@
 $heightNavbar: 7vh;
+
+.slide-view-enter-active,
+.slide-view-leave-active {
+  transition: all ease-in-out 1s;
+}
+
+.slide-view-enter-from,
+.slide-view-leave-to {
+  transform: translateX(300px);
+  opacity: 0;
+}

@@ -1,6 +1,8 @@
 <template>
   <TheNavbar />
-  <router-view />
+  <transition name="slide-view" mode="out-in">
+    <router-view :key="$route.path" />
+  </transition>
 </template>
 
 <script>
