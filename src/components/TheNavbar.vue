@@ -1,5 +1,5 @@
 <template>
-  <div class="theNavbar">
+  <div class="the-navbar">
     <div class="logo">
       <h2>Logo</h2>
     </div>
@@ -22,7 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.theNavbar {
+.the-navbar {
+  height: $heightNavbar;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
