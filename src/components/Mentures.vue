@@ -41,6 +41,7 @@ export default {
   padding: 0.5rem 0;
   margin: 0 3rem;
   box-shadow: 0 2px 5px gray;
+  border-radius: 5px;
   display: grid;
   justify-content: center;
   align-items: center;

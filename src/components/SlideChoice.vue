@@ -82,6 +82,7 @@ export default {
     width: 0;
     overflow: hidden;
     margin: 0 0.2rem;
+    border-radius: 5px;
 
     & .choice {
       margin: 0 0.5rem;
