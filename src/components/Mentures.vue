@@ -23,17 +23,23 @@ export default {
       articles: [...db],
     };
   },
+  computed: {
+    filterArticles() {
+      return this.articles.filter((article) => article.code == 1);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .mentures {
-  padding: 0.2rem;
+  padding: 0.5rem 0;
   margin: 0 5rem;
   box-shadow: 0 2px 5px gray;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: auto auto auto auto auto;
-  grid-column-gap: 50px;
   grid-row-gap: 25px;
 }
 </style>
