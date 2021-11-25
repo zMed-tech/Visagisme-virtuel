@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import db from "@/db.js";
+import mentures from "@/db/mentures.js";
 import Article from "@/components/Article";
 import { mapGetters } from "vuex";
 export default {
@@ -21,7 +21,7 @@ export default {
 
   data() {
     return {
-      articles: [...db],
+      articles: [...mentures],
     };
   },
   computed: {
