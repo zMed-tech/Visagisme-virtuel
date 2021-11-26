@@ -9,7 +9,7 @@
       />
     </div>
     <div class="name">
-      <h3>{{ name }}</h3>
+      <span> {{ name }} </span>
     </div>
   </div>
 </template>
@@ -34,6 +34,14 @@ export default {
   box-shadow: 1px 1px 4px gray;
   cursor: pointer;
   transition: all ease-in 0.3s;
+
+  & .name {
+    & span {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
 
   &:hover {
     transform: scale(1.1);
