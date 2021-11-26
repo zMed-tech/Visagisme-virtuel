@@ -57,7 +57,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem 0.5rem;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid $spaceColor;
   border-radius: 25px;
 
   & .lists {
@@ -71,19 +71,29 @@ export default {
       font-weight: bold;
       cursor: pointer;
       margin-right: 2rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       transition: all ease-in 0.5s;
       text-decoration: none !important;
-      color: black;
+      color: rgb(88, 85, 85);
+      position: relative;
 
-      &:hover {
-        color: red;
-        transform: scale(1.2);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        height: 3px;
+        width: 0;
+        background-color: red;
+        transition: all ease-in 0.4s;
+      }
+
+      &:hover::before {
+        width: 100%;
       }
     }
 
-    & .router-link-exact-active {
-      color: red;
+    & .router-link-exact-active::before {
+      width: 100%;
     }
   }
 
@@ -92,26 +102,19 @@ export default {
       font-weight: bold;
       outline: none;
       border-radius: 10px;
-      padding: 0.1rem 0.3rem;
+      padding: 0.3rem 0.5rem;
       cursor: pointer;
       font-size: 1rem;
       transition: all ease-in 0.5s;
-      background-color: transparent;
+      color: rgb(87, 83, 83);
+      background: linear-gradient(to right, $spaceColor 50%, white 50%);
+      box-shadow: 0px 0px 3px gray;
+      background-position: right;
+      background-size: 200%;
       border: none;
-      position: relative;
 
-      &::before {
-        content: "";
-        height: 3px;
-        width: 0;
-        position: absolute;
-        top: 90%;
-        background-color: red;
-        transition: all ease-in 0.5s;
-      }
-
-      &:hover::before {
-        width: 100%;
+      &:hover {
+        background-position: left;
       }
     }
   }
