@@ -1,4 +1,4 @@
-# visagisme-virtuel
+# Visagisme-virtuel
 
 ## Project setup
 ```
