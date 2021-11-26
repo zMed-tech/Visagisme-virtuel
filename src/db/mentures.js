@@ -1,61 +1,61 @@
 export default [
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleFemme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleFemme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "RectangleFemme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "RectangleFemme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "RectangleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "RectangleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "OvaleHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "RondHomme",
   },
   {
-    name: "Menture",
+    name: "Monture",
     image: "random.jpeg",
     code: "TriangleFemme",
   },
