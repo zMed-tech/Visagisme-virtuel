@@ -18,8 +18,14 @@
 export default {
   name: "Article",
   props: {
-    name: String,
-    image: String,
+    name: {
+      type: String,
+      default: "",
+    },
+    image: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>

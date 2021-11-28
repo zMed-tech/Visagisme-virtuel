@@ -33,7 +33,10 @@
 export default {
   name: "SlideChoice",
   props: {
-    choices: Array,
+    choices: {
+      type: Array,
+      default: () => [],
+    },
   },
 
   data() {
