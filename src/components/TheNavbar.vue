@@ -76,6 +76,8 @@ export default {
       text-decoration: none !important;
       color: rgb(88, 85, 85);
       position: relative;
+      display: flex;
+      justify-content: center;
 
       &::before {
         content: "";
