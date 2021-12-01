@@ -73,7 +73,7 @@ export default {
       margin-right: 2rem;
       font-size: 1rem;
       transition: all ease-in 0.5s;
-      text-decoration: none !important;
+      text-decoration: none;
       color: rgb(88, 85, 85);
       position: relative;
       display: flex;
