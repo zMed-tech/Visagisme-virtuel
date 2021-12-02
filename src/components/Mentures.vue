@@ -38,6 +38,8 @@ export default {
 
 <style lang="scss" scoped>
 .mentures {
+  width: 50%;
+  height: 70%;
   padding: 0.5rem 0;
   margin: 0 3rem;
   box-shadow: 0 2px 5px gray;

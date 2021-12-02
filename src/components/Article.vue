@@ -4,8 +4,8 @@
       <img
         :src="require(`@/assets/images/${image}`)"
         alt=""
-        height="100"
-        width="100"
+        height="300"
+        width="300"
       />
     </div>
     <div class="name">
